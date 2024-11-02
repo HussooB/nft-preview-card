@@ -1,0 +1,112 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height:100vh;
+background-color: hsl(217, 54%, 11%);
+}
+ .attribution { font-size: 13px; text-align: center; margin-top: 10px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.big-container{
+  width:360px;
+  height:600px;
+  padding:0px 23px;
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 15px;
+} 
+.big-img img{
+  width:320px;
+  position: relative;
+  border-radius: 10px;
+  margin: 20px 20px;
+}
+.big-img{
+display: flex;
+justify-content: center;
+position:relative;
+}
+.header p{
+  font-size: 18px;
+  color:rgba(255, 255, 255, 0.168);
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.header{
+  color:white;
+}
+.value{
+  display: flex;
+}
+.date{
+  display: flex;
+}
+.value-date{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.value p{
+  color:rgb(0, 238, 255);
+  margin-left: 5px;
+  font-size: 16px;
+}
+.date p{
+  color:rgba(255, 255, 255, 0.168);
+  margin-left:5px ;
+  font-size: 16px;
+}
+.line hr{
+  height: 1px;
+  border:none;
+  background-color:rgba(255, 255, 255, 0.168); 
+  margin-bottom: 20px;
+}
+.user{
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.user img{
+  width:15%;
+}
+.user p{
+  color:white;
+  margin-left: 10px;
+}
+.user span{
+  color:rgba(255, 255, 255, 0.168); 
+}
+.hover{
+  position:absolute;
+  background-color:rgba(0, 238, 255,0.5);
+  width:320px;
+  height:90%;
+  border-radius: 10px;
+  margin: 20px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition:opacity 0.3s ease-in-out;
+  cursor: pointer;
+}
+.hover img{
+  width:45px;
+}
+.big-img:hover .hover{
+ opacity: 1;
+}
+.header h2:hover{
+  color:rgb(0, 238, 255);
+  cursor: pointer;
+}
+.user p:hover{
+  color:rgb(0, 238, 255);
+  cursor: pointer;
+}
