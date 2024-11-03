@@ -74,6 +74,8 @@ position:relative;
 }
 .user img{
   width:15%;
+  border: 2px solid white;
+  border-radius: 50%;
 }
 .user p{
   color:white;
